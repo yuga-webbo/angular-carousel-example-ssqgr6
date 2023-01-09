@@ -1,0 +1,14 @@
+<carousel [jumpTo]="index">
+  <ng-container *ngFor="let item of items">
+    <ng-container *carouselItem>
+      <div class="item">{{ item.title }}</div>
+    </ng-container>
+  </ng-container>
+</carousel>
+<div class="bottom-control">
+  <button
+    *ngFor="let item of items; let i = index"
+    class="circular-button"
+    (click)="jumpToSlide(i)"
+  ></button>
+</div>

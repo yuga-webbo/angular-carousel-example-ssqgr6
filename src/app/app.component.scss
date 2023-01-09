@@ -1,0 +1,32 @@
+p,
+h1 {
+  font-family: Lato;
+}
+
+carousel {
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-control {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-top: -24px;
+  justify-content: center;
+
+  button {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: snow;
+    border: none;
+    margin: 4px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
